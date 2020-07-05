@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My life</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+</head>
+<body>
+    <header class="header" id="home">
+        <div class="content-wrapper header-nav">
+            <h1>My life</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#study">Study</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="mainvisual">
+        <div class="slide" id="makeImg">
+            <img src="./images/IMG_1532.jpg" alt="">
+            <img src="./images/IMG_1491.jpg" alt="">
+            <img src="./images/IMG_0387.jpg" alt="">
+            <img src="./images/4620693218545190886.553cf8f900450c70bab5f5da794d69e1.20022908.JPG" alt="">
+        </div>
+        <div class="bg1"></div>
+    </section>
+    <section class="Profile" id="profile">
+        <div class="content-wrapper">
+            <div class="contents">
+                <figure>
+                    <img src="./images/IMG_1915.JPG" alt="">
+                </figure>
+                <div class="content">
+                    <h2>Profile</h2>
+                    <div class="profile-text">
+                        <ul>
+                            <li>現在の所属:<span> 愛知工業大学</span></li>
+                            <li>趣味:<span> 旅行、料理、映画鑑賞</span></li>
+                            <li>得意なこと/苦手なこと:<br><span>周りがよく見える/他人の意見に流されやすい</span></li>
+                            <li>大学や高校で成長したこと:<br><span>大学生活ではITをたくさん学びたくさんの作品を制作しました。今まで作品を制作したことは経験したことがなかったので作品を制作する楽しさや達成感を経験することができました。</span></li>
+                            <li>どのような「働き方」「ライフプラン」を今は考えているのか:<br><span>皆と切磋琢磨し競争しあって働きたいです。ITは日々変化が激しいので社内だけの学びだけでなくプライベートでの学習をしっかりとしていきたいと考えています。</span></li>
+                            <li>1年後、10年後の自分の姿や実現したいこと:<br><span>まずは社内の業務を1年目で完璧にしたいです。そしてたくさんの経験を積みフルスタックな人材になりたいと考えています。プロジェクトリーダーなど様々な人から頼られる存在になり会社とともに大きく成長していきたいと考えています。</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="study-visual" id="study">
+        <h1>study</h1>
+    </section>
+    <section class="study01">
+        <dl>
+            <dt>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./images/デッサン01.jpg" alt="Swiper01"></div>
+                      <div class="swiper-slide"><img src="./images/デッサン02.jpg" alt="Swiper02"></div>
+                      <div class="swiper-slide"><img src="./images/モデリング01.jpg" alt="Swiper03"></div>
+                      <div class="swiper-slide"><img src="./images/モデリング02.jpg" alt="Swiper03"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-end"></div>
+                  </div>
+                  <script src="js/swiper.js"></script>
+                  <script>
+                      var swiper = new Swiper('.swiper-container', {
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        loop: true,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            type: 'progressbar',
+                            clickable: true,
+                            },
+                        });
+                  </script>
+            </dt>
+            <dd>
+                <h2>デッサンとモデリング</h2>
+                <p>
+                    デッサンとモデリングでは様々な作品を作りました。<br>
+                    その中でもお気に入りなのがこの４作品です。デッサンは初めての経験で初めて描いたのが２枚目のりんごです。まずは外型から描き始めて何度も修正をおこなって完成させました。<br>
+                    モデリングでは、ビデオレコーダーと化粧品が掲載されています。色がはみ出さないように補助テープを何度も貼って剥がしてを繰り返して、とても繊細な作業が多く大変でした。４枚目の化粧品は一番綺麗にできたと思っています。<br>
+                    初めてすることが多く作品作りをする楽しさと大変さを経験しました。
+                </p>
+            </dd>
+        </dl>
+    </section>
+    <section class="study02">
+        <dl>
+            <dt><video src="./video/study02.mp4" controls></dt>
+            <dd>
+                <h2>CGプログラミング</h2>
+                <p>
+                    CGプログラミングではC言語を使用して様々なオブジェクトを形成しちょっとしたゲーム？のようなものを制作しました。<br>
+                    掲載動画では、人のオブジェクトが走り回ってボールにぶつかったらゲームオーバーになります。クリアはありません、、。ボールの起動や箱の配置などエラーが起きないように何度も修正するのがとても大変でした。<br>
+                    C言語を使用してたくさんのことを学び、たくさん色々なことができると感じました。<br>
+                    ※ダブルクリックで動画全体が視聴できます。
+                </p>
+            </dd>
+        </dl>
+    </section>
+    <section class="study03">
+        <dl>
+            <dt><video src="./video/study03.mp4" controls></video></dt>
+            <dd>
+                <h2>動画制作</h2>
+                <p>
+                    おっとっとを使用してストップモーション動画を制作しました。<br>
+                    コンセプトは海で平和に暮らしている魚達（おっとっと）がサメに襲われてしますというものです。<br>
+                    １コマ１コマおっとっと達を動かして写真を撮影しました。小さな動きを何度も撮影しなければならないので１枚１枚見返しながらの作業は大変でした。しかし全部完成した時の感動は大きかったです。<br>
+                    ※ダブルクリックで動画全体が視聴できます。
+                </p>
+            </dd>
+        </dl>
+    </section>
+    <section class="study04">
+        <dl>
+            <dt>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./images/maya01.jpg" alt="Swiper01"></div>
+                      <div class="swiper-slide"><img src="./images/maya02.jpg" alt="Swiper02"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <script src="js/swiper.js"></script>
+                  <script>
+                      var swiper = new Swiper('.swiper-container', {
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        loop: true,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            type: 'progressbar',
+                            clickable: true,
+                            },
+                        });
+                  </script>
+            </dt>
+            <dd>
+                <h2>MAYA</h2>
+                <p>
+                    MAYAでは２枚の画像以外にもMAYAでモデリングした魚を使用して泳いでいる動画を制作したりしました。<br>
+                    1枚目はマテリアルなどを駆使してより本物に近づけるように工夫しました。<br>
+                    2枚目はサッカーボールを蹴るモーションの人型モデリングをしました。これもコマごとに動かして最終的にはボールをゴールに入れるアニメーションを作りました。1つ1つの関節の動きを本物の人間のように動かさなければならなかったので苦労しました。３DCGを作り上げるのはとても大変な作業だと実感しました。しかし完成した時の感動は大きくMAYAを学べてよかったと思います。
+                </p>
+            </dd>
+        </dl>
+    </section>
+    <footer class="footer">
+        <section class="content-wrapper">
+            <div class="high">
+                <h1>MY life</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#study">Study</a></li>
+                </ul>
+            </div>
+            <div class="low">
+                <label>
+                    愛知工業大学 情報科学部 情報科学科 メディア情報専攻<br>
+                    菱田研究室所属<br>
+                    舛田　裕哉（ますだ　ゆうや）<br>
+                    メールアドレス:yuya1998720@gmail.com<br>
+                    Githubアカウント:yuya1998720
+                </label>
+            </div>
+            <p>&copy;My life Co.,Ltd.</p>
+        </section>
+    </footer>
+</body>
+</html>

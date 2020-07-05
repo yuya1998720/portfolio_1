@@ -1,0 +1,301 @@
+/*--start base--*/
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+ul,li,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    transition: .3s;
+    opacity: 0.6;
+}
+section {
+    margin-bottom: 120px;
+}
+.content-wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+/*--end base--*/
+
+/*--start header--*/
+.header {
+    width: 100%;
+}
+.header-nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav ul li {
+    margin-right: 50px;
+}
+/*--end header--*/
+
+/*--start mainvisual--*/
+.mainvisual {
+    position: relative;
+    height: 600px;
+}
+.mainvisual .slide {
+    overflow: hidden;
+    width: 70%;
+    margin: 0;
+    height: 500px;
+}
+.mainvisual .slide img {
+    display: block;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    left: 100%;
+    animation: slideAnime 12s ease infinite;
+    margin-left: 30%;
+}
+.bg1 {
+    background: #e8e7e7;
+    height: 700px;
+    width: 50%;
+    position: absolute;
+    top: -18%;
+    left: 0;
+    z-index: -1;
+}
+/*--スライドのアニメーションを開始--*/
+.slide img:nth-of-type(1) { animation-delay: 0s }
+.slide img:nth-of-type(2) { animation-delay: 3s }
+.slide img:nth-of-type(3) { animation-delay: 6s }
+.slide img:nth-of-type(4) { animation-delay: 9s }
+/*--スライドのアニメーション--*/
+@keyframes slideAnime{
+    0% { left: 100%  }
+    2% { left: 0     }
+   23% { left: 0     }
+   25% { left: -100% }
+  100% { left: -100% }
+ }
+/*--end mainvisual--*/
+
+/*--start profile--*/
+.Profile h2 {
+    margin-bottom: 0px;
+    text-align: center;
+}
+.Profile .contents {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+.Profile .contents figure {
+    width: 50%;
+}
+.Profile .contents figure img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.Profile .content {
+    width: 48%;
+}
+.Profile .profile-text {
+    padding: 40px 60px 0px 60px; 
+}
+/*--end profile--*/
+
+/*--start studyvisual--*/
+.study-visual {
+    margin-bottom: 120px;
+    background-image: url(../images/study-wrapper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.study-visual h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 200px;
+    font-weight: normal;
+}
+/*--end studyvisual--*/
+
+/*--start Study01--*/
+.study01 {
+    margin-bottom: 240px;
+}
+.study01 dl {
+    width: 100%;
+    position: relative;
+}
+.study01 dl dt img {
+    width: 60%;
+    height: 500px;
+    object-fit: cover;
+}
+.study01 dl dd {
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: #fff;
+    color: #333;
+    padding: 80px;
+    z-index: 2;
+}
+/*--end Study01--*/
+
+/*--start Study02--*/
+.study02 {
+    margin-bottom: 240px;
+}
+.study02 dl {
+    width: 100%;
+    position: relative;
+}
+.study02 dt video {
+    width: 60%;
+    height: 500px;
+    object-fit: cover;
+}
+.study02 dt {
+    display: flex;
+    justify-content: flex-end;
+}
+.study02 dl dd {
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    background-color: #fff;
+    color: #333;
+    padding: 80px;
+    z-index: 2;
+}
+/*--end Study02--*/
+
+/*--start Study03--*/
+.study03 {
+    margin-bottom: 240px;
+}
+.study03 dl {
+    width: 100%;
+    position: relative;
+}
+.study03 dl dt video {
+    width: 60%;
+    height: 500px;
+    object-fit: cover;
+}
+.study03 dl dd {
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: #fff;
+    color: #333;
+    padding: 80px;
+    z-index: 2;
+}
+/*--end Study03--*/
+
+/*--start Study04--*/
+.study04 {
+    margin-bottom: 240px;
+}
+.study04 dl {
+    width: 100%;
+    position: relative;
+}
+.study04 dt img {
+    width: 60%;
+    height: 500px;
+    object-fit: cover;
+    float: right;
+}
+.study04 dt {
+    display: flex;
+    justify-content: flex-end;
+}
+.study04 dl dd {
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    background-color: #fff;
+    color: #333;
+    padding: 80px;
+    z-index: 2;
+}
+/*--end Study04--*/
+
+/*--Strat footer--*/
+.footer section {
+    padding-top: 120px;
+ }
+ .footer .high {
+   border-bottom: 1px solid #333;
+   display:-ms-flexbox;
+   display:-webkit-flex;
+   display: flex;
+   -ms-flex-pack:justify;
+   -webkit-justify-content: space-between;
+   justify-content:space-between;
+   align-items: flex-end;
+ }
+ .footer .high h1 {
+ 　　font-size: 1.5rem;
+ }
+ .footer .high ul {
+   display:-ms-flexbox;
+   display:-webkit-flex;
+   display: flex;
+   margin-bottom: 25px;
+ }
+ .footer .high li a {
+   color: #333;
+   padding: 0 25px;
+ }
+ .footer .high li a:hover {
+   opacity: 0.6;
+ }
+ .footer .low {
+   padding: 25px 0 60px 0;
+   color: #333;
+ }
+ .footer .low label {
+     font-size: 1rem;
+ }
+ .footer section p {
+   color: #333;
+   text-align: center;
+   font-size: 0.75rem;
+ }
+/*--End footer--*/
